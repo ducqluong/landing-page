@@ -11,6 +11,7 @@ header {
   flex-direction: column;
   background-color: #1f2937;
   gap: 50px;
+  padding: 5px 150px 80px 150px;
 }
 
 .heading-top {
@@ -22,10 +23,6 @@ header {
 .heading-top h3 {
   color: #f9faf8;
   font-size: 24px;
-}
-
-.header-text {
-  padding: 5px 150px 50px 150px;
 }
 
 nav {
@@ -66,33 +63,6 @@ a:visited {
   margin: 0;
 }
 
-/* ARTICLE-TOP */
-
-.article-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.article-images {
-  display: flex;
-}
-
-.article-middle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.article-bottom {
-  display: flex;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-
 .heading-bottom-left button {
   background-color: #3882f6;
   color: white;
@@ -100,4 +70,105 @@ footer {
   width: 100px;
   height: 25px;
   border-radius: 5px;
+}
+
+/* ARTICLE-TOP */
+
+.article-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 200px 50px 200px;
+}
+
+.article-images {
+  display: flex;
+  gap: 20px;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+li,
+li p {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+li img {
+  border: 3px solid #3882f6;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+/* ARTICLE-MIDDLE */
+
+.article-middle {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 60px 250px 60px 250px;
+}
+
+.article-middle p:nth-child(1) {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  margin: 10px;
+}
+
+.article-middle p:nth-child(2) {
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+  margin: 0;
+}
+
+/* ARTICLE-BOTTOM */
+
+.article-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-color: #3882f6;
+  margin: 80px 360px 80px 360px;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
+.article-bottom h3 {
+  color: #f9faf8;
+  margin-bottom: 0;
+}
+
+.article-bottom p {
+  font-size: 14px;
+  color: #e5e7eb;
+  margin-top: 4px;
+}
+
+.article-bottom button {
+  color: white;
+  background-color: #3882f6;
+  border: 1px solid white;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  font-size: 14px;
+  padding: 5px;
 }
